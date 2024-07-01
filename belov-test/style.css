@@ -1,0 +1,322 @@
+/*!
+Theme Name: Belov Test task
+Theme URI: https://github.com/ndegwamoche/belov-test
+Author: Martin Ndegwa Moche
+Author URI: https://github.com/ndegwamoche/
+Description: I developed this theme as part of my participation in the recruitment process at Belov Agency.
+Version: 1.0.0
+*/
+
+body {
+    font-family: 'Archivo', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    padding: 0;
+    margin: 0;
+    height: 8.06rem;
+    width: 100%;
+    background: rgba(217, 212, 199, 0.5);
+    text-align: center;
+}
+
+main {
+    background: rgba(217, 212, 199, 0.5);
+    width: 100%;
+}
+
+.main-content {
+    display: flex;
+    margin-left: 6.25rem;
+    margin-right: 6.25rem;
+    margin-bottom: 4.375rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.featured-article {
+    background-color: #fff;
+    width: 42.438rem;
+    height: 40.1875rem;
+    padding: 1.563rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin-right: 4.063rem;
+}
+
+.featured-article img {
+    margin-bottom: 1rem;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.featured-article-content {
+    text-align: center;
+}
+
+.featured-article a {
+    font-family: "Lora", serif;
+    font-size: 1.125rem;
+    border: 1px solid #1E1E1E;
+    text-decoration: none;
+    border-radius: 20px;
+    color: #000000;
+    padding: 4px 8px 4px 8px;
+    display: inline-block;
+}
+
+.featured-article h2 {
+    font-size: 2.5rem;
+    line-height: 2.875rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0.9rem;
+    margin-bottom: 0;
+}
+
+.featured-article p {
+    margin-top: 1rem;
+    padding: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 13.03px;
+}
+
+.featured-article p span {
+    margin-top: 1rem;
+    padding: 0;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 13.03px;
+}
+
+.articles-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3.75rem;
+    width: 49.125rem;
+}
+
+.articles-list article {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.articles-list img {
+    width: 15.9375rem;
+    height: 10.375rem;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.articles-list .article-content {
+    padding: 0;
+    margin-top: 0;
+    margin-left: 1.188rem;
+    padding-right: 1rem;
+}
+
+.article-content a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 16.32px;
+    color: #000000;
+}
+
+.article-content h3 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+
+}
+
+.article-content p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 13.06px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+@media (min-width: 1025px) and (max-width: 1730px) {
+    .main-content {
+        margin-left: 5rem;
+        margin-right: 5rem;
+        flex-wrap: nowrap;
+    }
+
+    .featured-article {
+        width: calc(50% - 2.5rem);
+    }
+
+    .articles-list {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .main-content {
+        margin-left: 3.125rem;
+        margin-right: 3.125rem;
+    }
+
+    .articles-list {
+        width: 100%;
+    }
+
+    .featured-article {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+
+    header {
+        height: 6rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .main-content {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .featured-article {
+        padding: 1.5rem;
+        margin-right: 0;
+        height: auto;
+    }
+
+    .featured-article h2 {
+        font-size: 1.75rem;
+        line-height: 2rem;
+    }
+
+    .featured-article a {
+        font-size: 1rem;
+    }
+
+    .featured-article p {
+        font-size: 0.875rem;
+    }
+
+    .articles-list {
+        gap: 2.5rem;
+        margin-top: 2.5rem;
+    }
+
+    .article-content a {
+        font-size: 14px;
+    }
+
+    .article-content h3 {
+        font-size: 18px;
+    }
+
+    .article-content p {
+        font-size: 12px;
+    }
+
+    .articles-list article {
+        flex-direction: row;
+    }
+
+    .articles-list img {
+        width: 8rem;
+        height: 5.5rem;
+    }
+
+    .articles-list .article-content {
+        margin-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    header {
+        height: 4.688rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .main-content {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .featured-article {
+        padding: 1rem;
+        margin-right: 0;
+        height: auto;
+    }
+
+    .featured-article h2 {
+        font-size: 1.25rem;
+        line-height: 1.375rem;
+    }
+
+    .featured-article a {
+        font-size: 0.875rem;
+    }
+
+    .featured-article p {
+        font-size: 0.75rem;
+    }
+
+    .articles-list {
+        gap: 2rem;
+        margin-top: 2.188rem;
+    }
+
+    .article-content a {
+        font-size: 12px;
+    }
+
+    .article-content h3 {
+        font-size: 16px;
+        margin-top: 0.625;
+    }
+
+    .article-content p {
+        font-size: 10px;
+        margin: 0;
+    }
+
+    .articles-list article {
+        flex-direction: row;
+    }
+
+    .articles-list img {
+        width: 6.875rem;
+        height: 4.723rem;
+    }
+
+    .articles-list .article-content {
+        margin-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
