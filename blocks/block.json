@@ -9,5 +9,13 @@
     "acf": {
         "mode": "preview",
         "renderTemplate": "render.php"
+    },
+    "style":[
+        "archivo-google-fonts",
+        "lora-google-fonts",
+        "file:./styles.css"
+    ],
+    "supports": {
+        "align": ["wide", "full"]
     }
 }
