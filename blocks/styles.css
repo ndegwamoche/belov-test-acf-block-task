@@ -1,27 +1,69 @@
+/*!
+Plugin Name: Belov Test ACF Block Task
+Plugin URI: https://github.com/ndegwamoche/belov-test
+Author: Martin Ndegwa Moche
+Author URI: https://github.com/ndegwamoche/
+Description: I developed this plugin as part of my participation in the recruitment process at Belov Agency.
+Version: 1.0.0
+*/
+
+/* Variables */
+:root {
+    --background-main: rgba(217, 212, 199, 0.5);
+    --margin-large: 6.25rem;
+    --margin-medium: 4rem;
+    --margin-small: 3.125rem;
+    --margin-xsmall: 2rem;
+    --padding-large: 1.563rem;
+    --padding-medium: 1.5rem;
+    --padding-small: 1rem;
+    --border-radius-large: 15px;
+    --border-radius-medium: 10px;
+    --border-radius-small: 20px;
+    --font-size-large: 2.5rem;
+    --font-size-medium: 1.75rem;
+    --font-size-small: 1.125rem;
+    --font-family-primary: 'Archivo', sans-serif;
+    --font-family-secondary: 'Lora', serif;
+    --text-color: #000000;
+    --bg-color: #ffffff;
+}
+
+/* Base styles */
+body {
+    font-family: var(--font-family-primary);
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 main {
-    background: rgba(217, 212, 199, 0.5);
+    background: var(--background-main);
     width: 100%;
 }
 
+/* Main content */
 .main-content {
     display: flex;
-    margin-left: 6.25rem;
-    margin-right: 6.25rem;
-    margin-bottom: 4.375rem;
+    margin: 0 var(--margin-large) var(--margin-large);
     flex-direction: row;
     flex-wrap: wrap;
 }
 
+/* Featured article */
 .featured-article {
-    background-color: #fff;
+    background-color: var(--bg-color);
     width: 42.438rem;
-    height: 40.1875rem;
-    padding: 1.563rem;
+    height: 40.188rem;
+    padding: var(--padding-large);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
-    border-radius: 15px;
+    border-radius: var(--border-radius-large);
     margin-right: 4.063rem;
 }
 
@@ -29,7 +71,7 @@ main {
     margin-bottom: 1rem;
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: var(--border-radius-medium);
 }
 
 .featured-article-content {
@@ -37,18 +79,18 @@ main {
 }
 
 .featured-article a {
-    font-family: "Lora", serif;
-    font-size: 1.125rem;
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-small);
     border: 1px solid #1E1E1E;
     text-decoration: none;
-    border-radius: 20px;
-    color: #000000;
-    padding: 4px 8px 4px 8px;
+    border-radius: var(--border-radius-small);
+    color: var(--text-color);
+    padding: 4px 8px;
     display: inline-block;
 }
 
 .featured-article h2 {
-    font-size: 2.5rem;
+    font-size: var(--font-size-large);
     line-height: 2.875rem;
     font-weight: 600;
     text-align: center;
@@ -66,12 +108,7 @@ main {
 }
 
 .featured-article p span {
-    margin-top: 1rem;
-    padding: 0;
     font-weight: 400;
-    text-transform: uppercase;
-    font-size: 12px;
-    line-height: 13.03px;
 }
 
 .articles-list {
@@ -82,21 +119,18 @@ main {
 }
 
 .articles-list article {
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: row;
 }
 
 .articles-list img {
-    width: 15.9375rem;
+    width: 15.938rem;
     height: 10.375rem;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: var(--border-radius-medium);
 }
 
-.articles-list .article-content {
-    padding: 0;
+.article-content {
     margin-top: 0;
     margin-left: 1.188rem;
     padding-right: 1rem;
@@ -108,28 +142,27 @@ main {
     font-weight: 700;
     font-size: 15px;
     line-height: 16.32px;
-    color: #000000;
+    color: var(--text-color);
 }
 
 .article-content h3 {
     font-size: 22px;
     font-weight: 600;
     line-height: 30px;
-
 }
 
 .article-content p {
     font-size: 12px;
     font-weight: 500;
     line-height: 13.06px;
-    color: #000000;
     text-transform: uppercase;
+    color: var(--text-color);
 }
 
+/* Media queries */
 @media (min-width: 1367px) and (max-width: 1730px) {
     .main-content {
-        margin-left: 5rem;
-        margin-right: 5rem;
+        margin: 0 5rem;
         flex-wrap: nowrap;
     }
 
@@ -142,12 +175,9 @@ main {
     }
 }
 
-
 @media (min-width: 1263px) and (max-width: 1366px) {
     .main-content {
-        margin-left: 4rem;
-        margin-right: 4rem;
-        margin-right: 5rem;
+        margin: 0 var(--margin-medium);
         flex-wrap: nowrap;
     }
 
@@ -163,8 +193,7 @@ main {
 
 @media (max-width: 1024px) {
     .main-content {
-        margin-left: 3.125rem;
-        margin-right: 3.125rem;
+        margin: 0 var(--margin-small);
     }
 
     .articles-list {
@@ -178,7 +207,6 @@ main {
 }
 
 @media (max-width: 768px) {
-
     header {
         height: 6rem !important;
     }
@@ -188,18 +216,17 @@ main {
     }
 
     .main-content {
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin: 0 var(--margin-xsmall);
     }
 
     .featured-article {
-        padding: 1.5rem;
+        padding: var(--padding-medium);
         margin-right: 0;
         height: auto;
     }
 
     .featured-article h2 {
-        font-size: 1.75rem;
+        font-size: var(--font-size-medium);
         line-height: 2rem;
     }
 
@@ -228,24 +255,18 @@ main {
         font-size: 12px;
     }
 
-    .articles-list article {
-        flex-direction: row;
-    }
-
     .articles-list img {
         width: 8rem;
         height: 5.5rem;
     }
 
-    .articles-list .article-content {
+    .article-content {
         margin-left: 1rem;
         padding-right: 1rem;
     }
 }
 
-
 @media (max-width: 480px) {
-
     header {
         height: 4.688rem !important;
     }
@@ -255,13 +276,11 @@ main {
     }
 
     .main-content {
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin: 0 var(--padding-small);
     }
 
     .featured-article {
-        padding: 1rem;
-        margin-right: 0;
+        padding: var(--padding-small);
         height: auto;
     }
 
@@ -289,7 +308,6 @@ main {
 
     .article-content h3 {
         font-size: 16px;
-        margin-top: 0.625;
     }
 
     .article-content p {
@@ -297,16 +315,12 @@ main {
         margin: 0;
     }
 
-    .articles-list article {
-        flex-direction: row;
-    }
-
     .articles-list img {
         width: 6.875rem;
         height: 4.723rem;
     }
 
-    .articles-list .article-content {
+    .article-content {
         margin-left: 0.5rem;
         padding-right: 0.5rem;
     }
