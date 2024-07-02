@@ -1,3 +1,4 @@
+0
 /*!
 Plugin Name: Belov Test ACF Block Task
 Plugin URI: https://github.com/ndegwamoche/belov-test
@@ -184,6 +185,7 @@ main {
     .featured-article {
         width: 40%;
         margin-right: 3.5rem;
+        height: 36.188rem;
     }
 
     .articles-list {
